@@ -17,3 +17,43 @@ employee = [[12, 'james'],
 // unions
 let pid;
 pid = 22;
+// enums
+var Direction1;
+(function (Direction1) {
+    Direction1[Direction1["up"] = 1] = "up";
+    Direction1[Direction1["down"] = 2] = "down";
+    Direction1[Direction1["left"] = 3] = "left";
+    Direction1[Direction1["right"] = 4] = "right";
+})(Direction1 || (Direction1 = {}));
+console.log(Direction1.up);
+var Direction2;
+(function (Direction2) {
+    Direction2["up"] = "up";
+    Direction2["down"] = "down";
+    Direction2["left"] = "left";
+    Direction2["right"] = "right";
+})(Direction2 || (Direction2 = {}));
+console.log(Direction2.up);
+const user = {
+    id: 1,
+    name: "Nich"
+};
+// type assertion
+let cid = 1;
+// let customerId = <number>cid
+let customerId = cid;
+//functions
+function Addnum(x, y) {
+    return (x + y);
+}
+console.log(Addnum(1, 2));
+//void
+function log(message) {
+    console.log(message);
+}
+const user1 = {
+    id: 1,
+    name: "Nich"
+};
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
