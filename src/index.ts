@@ -98,7 +98,9 @@ class Person {
         this.name = name
         console.log(123)
     }
-
+    register (){
+        return `${this.name} is now registered`
+    }
 
 }
 
@@ -106,3 +108,16 @@ const brad = new Person(1, 'brad traversy')
 const mike = new Person(2, 'Nicholas Masete')
 
 console.log(brad, mike)
+
+// subclass
+class Employee extends class Person {
+    position: string
+
+    constructor (id: number, name: string, position: string){
+        super(id, name)
+        this.position = position
+    }
+}
+
+const emp = new Employee(3, 'john', 'developer')
+console.log(emp.john)
